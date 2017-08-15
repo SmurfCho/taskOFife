@@ -1,0 +1,87 @@
+div,ul,li{
+	margin:0;
+	padding:0;
+	font-family:Microsoft YaHei;
+	display:block;
+	font-size:0; 
+	text-decoration:none;
+	word-wrap: break-word;
+	margin:auto;
+	list-style: none;
+}
+#search-box{
+	position: relative;
+	height: 30px;
+}
+#search{
+	width: 200px;
+	height:30px;
+	position: relative;
+	display: inline-block;
+	float: left;
+	border:1px solid #aaa;
+	border-radius: 9px;
+	background: #fff;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+
+form{
+	height:30px;
+	position: relative;
+	margin-top: 15px;
+}
+#inp{
+	height:30px;
+	position:relative;
+	display: inline-block;
+	float: left;
+	border:1px solid #aaa;
+	font-size: 20px;
+	color: #000;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+#btn-leftin,#btn-rightin,#btn-leftout,#btn-rightout,#sort,#btn-search{
+	height:30px;
+	position: relative;
+	display: inline-block;
+	float: left;
+	border:1px solid #aaa;
+	border-radius: 9px;
+	background: #fff;
+	font-size:16px;
+	color: #000;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	margin-left:10px;
+	cursor: pointer;
+}
+ul{
+	height:30px;
+	position: relative;
+	margin-top:20px;
+	vertical-align: bottom;
+}
+li{
+	height: 30px;
+	position: relative;
+	display: inline-block;
+	float: left;
+	background: #f00;
+	font-size: 20px;
+	color: #fff;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+	display: table-cell;
+	vertical-align: bottom;
+}
