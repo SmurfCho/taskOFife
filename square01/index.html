@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>听指令的小方块</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<table id="table"></table>
+	<div id="order">
+		<select id="orderinp">
+			<option value="go">GO</option>
+			<option value="lef">TUN LEF</option>
+			<option value="rig">TUN RIG</option>
+			<option value="bac">TUN BAC</option>
+		</select>
+		<input id="orderbtn" type="button" name="order" value="执行">
+	</div>
+	<ul id="instrution">
+		<li>GO：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+		<li>TUN LEF：向左转（逆时针旋转90度）</li>
+		<li>TUN RIG：向右转（顺时针旋转90度）</li>
+		<li>TUN BAC：向右转（旋转180度）</li>
+	</ul>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+#table{
+	height: 550px;
+	width: 550px;
+	position: relative;
+	margin: auto;
+	border-collapse: collapse;
+}
+td{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	border: 2px solid #ddd;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	z-index: -1;
+}
+.border_none{
+	border: none;
+}
+#order,#instrution{
+	width: 450px;
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+	top: -50px;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: mircosoft Yahei;
+}
+#orderinp{
+	height: 30px;
+	width: 200px;
+	border: 2px solid #ddd;
+	padding: 0px 10px 0px 10px;
+	box-sizing: border-box;
+	overflow: scroll;
+}
+#orderbtn{
+	height: 30px;
+	width: 60px;
+	border: none;
+	border-radius: 7px;
+	background: #f00;
+	color: #fff;
+	font-size: 16px;
+	font-family: mircosoft Yahei;
+	cursor: pointer;
+}
+img{
+	height: 49px;
+	width: 49px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+	transform: translateX(300px) translateY(-250px) rotate(0deg);
+	transition: transform 0.5s;
+}
