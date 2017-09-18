@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css"> 
+	#draggable {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    background: white;
+  }
+
+  .dropzone {
+    width: 200px;
+    height: 20px;
+    background: blueviolet;
+    margin-bottom: 10px;
+    padding: 10px;
+  }</style>
+</head>
+<body>
+	<div class="dropzone">
+    <div id="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+        This div is draggable
+    </div>
+</div>
+<div class="dropzone"></div>
+<div class="dropzone"></div>
+<div class="dropzone"></div>
+<script type="text/javascript">
+	 var dragged;
+
+  /* 可拖动的目标元素会触发事件 */
+  document.addEventListener("drag", function( event ) {
+
+  }, false);
+
+  document.addEventListener("dragstart", function( event ) {
+      // 保存拖动元素的引用(ref.)
+      dragged = event.target;
+  }, false);
+
+  document.addEventListener("dragend", function( event ) {
+  }, false);
+
+  /* 放下目标节点时触发事件 */
+  document.addEventListener("dragover", function( event ) {
+      // 阻止默认动作
+      event.preventDefault();
+  }, false);
+
+  document.addEventListener("dragenter", function( event ) {
+  }, false);
+
+  document.addEventListener("dragleave", function( event ) {
+
+  }, false);
+
+  document.addEventListener("drop", function( event ) {
+      // 阻止默认动作（如打开一些元素的链接）
+      event.preventDefault();
+      // 移动拖动的元素到所选择的放置目标节点
+      if ( event.target.className == "dropzone" ) {
+          event.target.style.background = "";
+          dragged.parentNode.removeChild( dragged );
+          event.target.appendChild( dragged );
+      }
+    
+  }, false);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮出层</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="floorbot">
+		<div id="height">
+			<label>弹出框高度：</label>
+			<input id="heightinp" type="text" name="height" value="40">
+			<label>%</label>
+		</div>
+		<div id="width">
+			<label>弹出框宽度：</label>
+			<input id="widthinp" type="text" name="width" value="30">
+			<label>%</label>
+		</div>
+		<input id="popup" type="button" name="popup" value="弹出浮层">
+	</div>
+	<div id="mask"></div>
+	<div id="popover" draggable="true" ondragstart="event.dataTransfer.setData('object',null)">
+		<div id="top"><span id="close">X</span></div>
+		<div id="mid">warning!</div>
+		<div id="btn">
+			<input id="submit" type="button" name="submit" value="确认">
+			<input id="cancel" type="button" mame="cancel" value="取消">
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
