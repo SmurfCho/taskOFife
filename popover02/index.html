@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>排序列表</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form id="dataAdd">
+		<input id="memberName" type="text" name="membername" placeholder="请输入名称">
+		<input id="ChineseGrade" type="text" name="ChineseGrade" placeholder="语文成绩">
+		<input id="mathGrade" type="text" name="mathGrade" placeholder="数学成绩">
+		<input id="EnglishGrade" type="text" name="EnglishGrade" placeholder="英语成绩">
+		<input id="submitBtn" type="button" name="submitBtn" value="提交">
+	</form>
+	<table id="gradeTable">
+		<tbody id="gradeTbody">
+			<tr>
+				<th>姓名</th>
+				<th>语文<input id="sortbtn_c" type="button" title="排序"></th>
+				<th>数学<input id="sortbtn_m" type="button" title="排序"></th>
+				<th>英语<input id="sortbtn_e" type="button" title="排序"></th>
+				<th>总成绩<input id="sortbtn_t" type="button" title="排序"></th>
+			</tr>
+		</tbody>
+	</table>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

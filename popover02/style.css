@@ -1,0 +1,69 @@
+form{
+	width: 70%;
+	margin: auto;
+	font-family: Microsoft Yahei;
+}
+#memberName,#ChineseGrade,#mathGrade,#EnglishGrade{
+	width: 180px;
+	height: 30px;
+	margin: 50px 10px 50px 10px;
+	padding: 0 10px 0 10px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	font-size: 16px;
+}
+#submitBtn{
+	height: 30px;
+	margin: 50px 10px 50px 10px;
+	padding: 0 20px 0 20px;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 7px;
+	background: #f00;
+	font-family: Simhei;
+	font-size: 16px;
+	color: #fff;
+}
+#gradeTable{
+	width: 70%;
+	margin: auto;
+	border-collapse: collapse;
+	border: 1px solid #fff;
+}
+tr{
+	width: 100%;
+	height: 50px;
+}
+th{
+	width: 20%;
+	border: 1px solid #ddd;
+	padding-left: 25px;
+	background: #303030;
+	line-height: 50px;
+	font-size: 16px;
+	color: #fff;
+}
+th:nth-of-type(1){
+	padding-left: 0px;
+}
+#sortbtn_c,#sortbtn_e,#sortbtn_m,#sortbtn_t{
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin: 10px;
+	cursor: pointer;
+	background-image: url(icon/icon_1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #303030;
+	border: none;
+}
+td{
+	width: 20%;
+	border: 1px solid #ddd;
+	background: #fff;
+	line-height: 50px;
+	font-size: 16px;
+	color: #303030;
+	text-align: center;
+}
